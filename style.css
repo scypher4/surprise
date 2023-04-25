@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+}
+body {
+background-color: #f7efe6;
+background-image:  radial-gradient(#f7a145 2px, transparent 2px), radial-gradient(#f7a145 2px, #f7efe6 2px);
+background-size: 80px 80px;
+background-position: 0 0,40px 40px;
+}
+html {
+    font-size: 62.5%;
+}
+.section1 {
+    /* background: linear-gradient(to right bottom, #2b1e02, #564220, #876b3b,#f2c377); */
+  
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:  center;
+}
+.border {
+    border: solid white 1px;
+} 
+.title {
+ font-size: 20rem;
+ font-family: 'DynaPuff', cursive;
+ text-align: center;
+}
+.decoration {
+   animation: sparking 0.8s infinite alternate both ;
+}
+.shark {
+    position: absolute;
+    margin-left: 900px;
+}
+@keyframes sparking {
+    0% {
+        text-shadow: 0 -5px 1px #fff,
+        0 -5px 0.5px #fff,
+         0 -5px 1.5px #fff,
+        0 -5px 5px #fff,
+        0 0 5px #f5cd1d,
+        0 0 10px #f5cd1d;
+    }
+    100% {
+        text-shadow: 0 -5px 1px #fff,
+        0 -5px 0.5px #fff,
+         0 -5px 1.5px #fff,
+        0 -5px 5px #fff,
+        0 0 5px #f5cd1d,
+         0 0 10px #f5cd1d,
+        0 0 11px #f5cd1d,
+        0 0 12.5px #f5cd1d,
+        0 0 19px #f5cd1d;
+        /* 0 -5px 10px #f5cd1d,
+        0 -5px 20px #f5cd1d,
+        0 -5px  30px #f5cd1d; */
+
+    }
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section2 {
+    height: 100vh;
+    width: auto;
+    padding: 0 10%;
+}
+
+.wishes {
+    height: 58vh;
+    width: auto;
+    background: rgba(105, 140, 211, 0.7);
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    padding: 10px 0;
+    border: solid 1px black;
+}
+.wishes span{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.section3 {
+    height: 100vh;
+}
+.section3 > div:nth-child(1) {
+    color: black;
+    font-size: 2rem;
+}
+.cake > img{
+  height: 240px;
+  width: 340px;
+}
+.section4 {
+  height: 85vh;
+  width: auto;
+}
+.section4 div {
+  font-size: 2rem;
+  font-family: 'Charm', cursive;
+  font-weight: bold;
+}
+.card {
+  margin-top: 20px;
+  width: 15%;
+  height: 10%;
+  background: white;
+  border: dashed 2px brown;
+  outline: solid 10px white;
+  color: black;
+  transition: 1s;
+  content: hidden;
+}
+.card div {
+  display: none;
+}
+.card:focus {
+    transform: scale(4);
+    font-size: 5px;
+}
+.card:focus div{
+  display: block;
+  font-size: 3.5px;
+  color: black;
+}
+@media (max-width: 720px){
+    .title {
+        font-size: 9rem;
+    }
+    .section2 {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 15% ;
+        height: 77vh;
+        /* border: black solid 1px; */
+    }
+    .wish-text {
+        font-size: 200%;
+        width: 60%;
+    }
+    .wishes {
+        font-size: 2rem;
+    }
+    .wishes span {
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 720px) and (max-width : 1210px) {
+    .wishes {
+        font-size: 3rem;
+    }
+}
